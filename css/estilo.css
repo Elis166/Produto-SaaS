@@ -1,46 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(255, 255, 255);
-    color: blue;
+    background-color: #000;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
-header{
-    height: 80px;
+
+
+
+.topo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 60px;
+    z-index: 10;
 }
 
-.hero {
-  height: calc(100vh - 80px);
+.logo{
+    height: 250px;
+  
 
-  background-image:
-    linear-gradient(rgba(11, 5, 5, 0.7), rgba(55, 31, 31, 0.7)),
-    url("../img/Fundo.png");
+    
+}
 
-  background-size: cover;
-  background-position: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero{
+    height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(5, 9, 68, 0.6), rgba(0,0,0,0.6)),
+        url("../img/Fundo.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-.hero-content {
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
+
+
+
+.hero-content{
+    max-width: 600px;
+    width: 100%;
+    margin-left: 60px;
 }
-.formulario {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
+
+
+
+.hero-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
-.formulario input {
-  flex: 1;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
+
+.hero-content h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
-.formulario button {
-  padding: 12px 20px;
-  background-color: #e50914;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+
+.hero-content p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.formulario{
+    display: flex;
+    gap: 10px;
+}
+
+.formulario input{
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.formulario button{
+    padding: 14px 22px;
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
