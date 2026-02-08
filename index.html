@@ -1,40 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trabalho - autoria web e design</title>
-
-    <link rel="stylesheet" href="css/estilo.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style_index.css">
 </head>
 <body>
-
-<header class="topo">
-    <img src="img/image_3-removebg-preview 1.png" class="logo" alt="Logo">
-</header>
-
-<main>
     <section class="hero">
-        <div class="hero-content">
 
-            <h1>Filmes, séries e muito mais, sem limites</h1>
+    <header class="topo">
+      <button class="btn-entrar" id="btn-entrar">Entrar</button>
+    </header>
 
-            <h2>A partir de R$ 20,90. Cancele quando quiser.</h2>
+    <div class="conteudo">
+      <!-- LOGO ÚNICA -->
+      <img src="img/image_3-removebg-preview 1.png" alt="Netflix" class="logo">
 
-            <p>
-                Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
-            </p>
+      <h1>Filmes, séries e muito mais, sem limites</h1>
+      <p class="preco">A partir de R$ 20,90. Cancele quando quiser.</p>
+      <p class="cadastro">Vamos fazer seu cadastro</p>
 
-            <div class="formulario">
-                <input type="email" placeholder="Email">
-                <button>Vamos lá</button>
-            </div>
+      <div class="formulario">
+        <input type="email" id="email" placeholder="Email">
+        <button id="btn-continuar">Vamos lá</button>
+      </div>
+    </div>
 
-        </div>
-    </section>
-</main>
+  </section>
+
+  <script src="javascript/script.js"></script>
 
 </body>
 </html>
