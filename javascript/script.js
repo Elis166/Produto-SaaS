@@ -1,6 +1,5 @@
-// ============================
+
 // INDEX.HTML
-// ============================
 const btnContinuar = document.getElementById("btn-continuar");
 const inputEmail = document.getElementById("email");
 const btnEntrarIndex = document.getElementById("btn-entrar");
@@ -25,9 +24,9 @@ if (btnEntrarIndex) {
     });
 }
 
-// ============================
+
 // CADASTRO.HTML
-// ============================
+
 const formCadastro = document.getElementById("form-cadastro");
 
 if (formCadastro) {
@@ -49,9 +48,7 @@ if (formCadastro) {
     });
 }
 
-// ============================
 // ENTRANDO.HTML (LOGIN)
-// ============================
 const formEntrar = document.getElementById("form-entrar");
 
 if (formEntrar) {
@@ -73,9 +70,7 @@ if (formEntrar) {
     });
 }
 
-// ============================
 // MOSTRUARIO.HTML
-// ============================
 function protegerPagina() {
     const logado = localStorage.getItem("logado");
 
