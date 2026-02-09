@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 60px;
+    z-index: 10;
+    background-color: #1C232D;
+    height: 64px;
+}
+
+.logo{
+    height: 48px;
+}
+
+
+.hero{
+    height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(5, 9, 68, 0.6), rgba(0,0,0,0.6)),
+        url("../img/Fundo.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.hero-content{
+    max-width: 600px;
+    width: 100%;
+    margin-left: 60px;
+}
+
+
+
+.hero-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-content h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hero-content p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.formulario{
+    display: flex;
+    gap: 10px;
+}
+
+.formulario input{
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.formulario button{
+    padding: 14px 22px;
+    background-color: #22BCE2;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+  .hero{
+    height: auto;
+    padding: 40px 20px 60px;
+    background-position: center;
+  }
+
+  .topo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .topo h2{
+    font-size: 22px;
+  }
+
+  .hero-content{
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .hero-content h1{
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .preco{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .formulario input{
+    width: 100%;
+    height: 50px;
+    font-size: 1px;
+    padding: 10px;
+  }
+
+  .formulario button{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .hero-content h2{
+    font-size: 18px;
+  }
+
+  .hero-content p{
+    font-size: 14px;
+  }
+}
